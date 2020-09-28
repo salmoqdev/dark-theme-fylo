@@ -49,7 +49,7 @@ a {
 }
 
 .btn {
-    display: inline-block;/*very important otherwise the button will break outside the media range*/
+    display: inline-block;
     text-decoration: none;
     color: var(--clr-white);
     font-weight: 700;
@@ -76,7 +76,7 @@ a {
 
 .nav-links {
     display: flex;
-    flex-wrap: nowrap;/*if flex-wrap: wrap then it'd be suitable for all screen sizes without even using media quaries BUT because of the challenge design nowrap on small screens*/
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -84,7 +84,7 @@ a {
 .nav-links a{
     text-decoration: none;
     color: var(--clr-white);
-    font-size: clamp(.6rem, 2.5vw, 1.2rem);/*clamo(min, preferred value, max)*/
+    font-size: clamp(.6rem, 2.5vw, 1.2rem);
     font-weight: 400;
 }
 
@@ -190,11 +190,6 @@ a {
     font-weight: 400;
 }
 
-/*in order to make the subs-card appear on the top part of the footer:
-1. make subs-card position:relative and z-index: 1.
-2. make the footer position: absolute.
-3. move the whole block of subscription move downward using margin-bottom:-13em.
-*/
 .subsription {
     margin-bottom: 23em;
 }
@@ -213,7 +208,7 @@ a {
     font-size: clamp(.9em, 2.5vw, 1em);
 }
 
-.subsription .btn {/*make changes to ONLY this button that's inside .subsription class*/
+.subsription .btn {
     padding: 1.2em 5em;
 }
 
@@ -237,12 +232,12 @@ a {
 }
 
 .col1 span,
-.col2 span {/*add a margin of 2em to the left of the span*/
+.col2 span {
     margin-left: 1.3em;
 }
 
 .col1 div,
-.col2 div {/*add a margin of 1em to the bottom of each div element inside col1 and col2*/
+.col2 div {
     margin-bottom: 1em;
 }
 
@@ -258,7 +253,7 @@ a {
 }
 
 .col3,
-.col4 {/*limited the width of col3 and col4 so only the linkable area would be just the link itself NOT the whole line*/
+.col4 {
     width: 30%;
     margin-bottom: 2.5em;
 }
@@ -270,9 +265,9 @@ a {
 
 .social-img {
     background: var(--clr-white);
-    border-radius: 50%;/*because the background behind the circle is square and it's white*/
+    border-radius: 50%;
     border: 1px solid #fff;
-    width: 1.5em;/*the original size is 128px!!!*/
+    width: 1.5em;
 }
 
 .attribution { 
@@ -285,12 +280,7 @@ a {
 }
 
 @media (min-width: 64em){
-    /* html {Add image with a linear-gradiant
-        background-image: url(../images/bg-curvy-desktop.svg), linear-gradient(var(--clr-intro-and-email-sign-up-background), var(--clr-footer-background));
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: 35em;
-    } */
+
 
     .intro .container {
         width: 50%;
@@ -363,7 +353,6 @@ a {
 
     #email-field {
         padding: 1.1em 14em 1.1em 1em;
-        /* padding: 1.5em 19em; This way the text will be centered*/
         margin-right: 1em;
     }
 
@@ -390,6 +379,6 @@ a {
     }
     .col-social {
         width: 10%;
-        margin: 0;/*previously on mobile screen it was margin: 4.8em 0 2em;*/
+        margin: 0;
     }
 }
